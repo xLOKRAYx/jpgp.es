@@ -1,0 +1,56 @@
+html
+{
+    margin: 0px;
+    height: 100%;
+}
+
+body
+{
+    background-color: #353449;
+}
+#frame
+{
+    margin: 40px;
+    border: 2px solid #F9F9F9;
+    width: auto;
+    height: calc(100vh - 80px);
+    position: relative;
+    background-color: #157A6E;
+}
+#presentation
+{
+    margin: 20px;
+    margin-left: 28px;
+}
+#menu
+{
+    position: absolute;
+    bottom: 0;
+}   
+ul,a
+{
+    font-size: 20px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    line-height: 45.40px;
+    color: #F9F9F9;
+    text-decoration: none;
+    list-style: square;
+}
+li
+{
+    cursor: pointer;
+}
+li:hover
+{
+    font-size: 25px;
+}
+
+.active
+{
+    font-family: Archivo Black;
+}
+.nonActive
+{
+    font-family: 'Archivo', sans-serif;
+}
