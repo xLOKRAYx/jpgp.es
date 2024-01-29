@@ -6,21 +6,23 @@ html
 
 body
 {
-    background-color: #353449;
+    background-color: #F9F9F9;
 }
 #frame
 {
     margin: 40px;
-    border: 2px solid #F9F9F9;
+    border: 2px solid #000000;
     width: auto;
     height: calc(100vh - 80px);
     position: relative;
-    background-color: #157A6E;
+    background-color: #F9F9F9;
 }
 #presentation
 {
     margin: 20px;
     margin-left: 28px;
+    width: 430px;
+    text-align:justify;
 }
 #menu
 {
@@ -33,7 +35,7 @@ ul,a
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     line-height: 45.40px;
-    color: #F9F9F9;
+    color: #000000;
     text-decoration: none;
     list-style: square;
 }
@@ -53,4 +55,10 @@ li:hover
 .nonActive
 {
     font-family: 'Archivo', sans-serif;
+}
+#stretch
+{
+    font-size: 50px;
+    line-height: 60px;
+    color: #C74749;
 }
