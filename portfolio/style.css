@@ -22,11 +22,16 @@ html
 
 body
 {
+<<<<<<< HEAD
     background-color: var(--color-2);
+=======
+    background-color: #F9F9F9;
+>>>>>>> fa62d5f1b487f3df0c70a283712b19e3db728e9e
 }
 #frame
 {
     margin: 40px;
+<<<<<<< HEAD
     border: 2px solid;
     border-color: var(--color-1);
     width: auto;
@@ -36,12 +41,25 @@ body
     backdrop-filter: blur(3.9px);
     -webkit-backdrop-filter: blur(3.9px);
 }   
+=======
+    border: 2px solid #000000;
+    width: auto;
+    height: calc(100vh - 80px);
+    position: relative;
+    background-color: #F9F9F9;
+}
+>>>>>>> fa62d5f1b487f3df0c70a283712b19e3db728e9e
 #presentation
 {
     margin: 20px;
     margin-left: 28px;
+<<<<<<< HEAD
     width: 37%;
     text-align: justify;
+=======
+    width: 430px;
+    text-align:justify;
+>>>>>>> fa62d5f1b487f3df0c70a283712b19e3db728e9e
 }
 #menu
 {
@@ -54,7 +72,11 @@ ul,a
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     line-height: 45.40px;
+<<<<<<< HEAD
     color: var(--color-1);
+=======
+    color: #000000;
+>>>>>>> fa62d5f1b487f3df0c70a283712b19e3db728e9e
     text-decoration: none;
     list-style: square;
 }
@@ -99,6 +121,7 @@ li
     color: var(--color-1);
     font-size: 20px;
     font-family: 'Archivo', sans-serif;
+<<<<<<< HEAD
     font-weight: 100;
     color: var(--color-1);
     text-decoration: none;
@@ -140,4 +163,12 @@ li
     color: var(--color-1);
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
+=======
+}
+#stretch
+{
+    font-size: 50px;
+    line-height: 60px;
+    color: #C74749;
+>>>>>>> fa62d5f1b487f3df0c70a283712b19e3db728e9e
 }
