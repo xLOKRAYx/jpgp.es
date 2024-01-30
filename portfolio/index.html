@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <script src="script.js"></script>
 </head>
 <body style="margin: 0px;">
+    <div id="buttons">
+        <li id="toggle" onclick="toggleDarkMode();">DARK</li>
+    </div>
     <div id="frame">
         <div id="presentation" style="letter-spacing: -1px; ">
-            <span style="color: #F9F9F9; font-size: 35px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word">Hello, I’m </span>
-            <span style="color: #EE5951; font-size: 40px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word">Juan Pablo<br/></span>
-            <span style="color: #353449; font-size: 35px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word">yet </span>
-            <span style="color: #F9F9F9; font-size: 35px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word"> a student, <br/></span>
-            <span style="color: #353449; font-size: 35px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word">soon </span>
-            <span style="color: #F9F9F9; font-size: 35px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word">a </span>
-            <span style="color: #C74749; font-size: 35px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word">PROFESSIONAL</span>
-            <span style="color: #F9F9F9; font-size: 35px; font-family: Archivo Black; font-weight: 400; line-height: 45.40px; word-wrap: break-word">.</span>
+            <h1 id="presentationText">Hello, I'm <span style="color: #EE5951;">Juan Pablo</span>. Yet a student, soon a <span id="PROFESSIONAL">PROFESSIONAL</span>.</h1>
         </div>
         <div id="menu">
             <ul>
@@ -32,6 +28,11 @@
                 <li onclick="changeActive(2);" id="2">Contact</li>
                 <li onclick="changeActive(3);" id="3">Portfolio</li>
             </ul>
+        </div>
+        <div id="about">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, perferendis esse velit ullam aut laboriosam. Architecto repudiandae, voluptas praesentium labore adipisci, eum minus quaerat, omnis quidem eveniet sit maiores ducimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, perferendis esse velit ullam aut laboriosam. Architecto repudiandae, voluptas praesentium labore adipisci, eum minus quaerat, omnis quidem eveniet sit maiores ducimus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, perferendis esse velit ullam aut laboriosam. Architecto repudiandae, voluptas praesentium labore adipisci, eum minus quaerat, omnis quidem eveniet sit maiores ducimus!</p>
         </div>
     </div>
     <script src="script.js"></script>

@@ -1,3 +1,19 @@
+[data-theme="light"]
+{
+    --color-1:#000000;
+    --color-2:#F9F9F9;
+}
+[data-theme="dark"]
+{
+    --color-2:#000000;
+    --color-1:#F9F9F9;
+}
+
+*
+{
+    user-select: none;
+}
+
 html
 {
     margin: 0px;
@@ -6,21 +22,26 @@ html
 
 body
 {
-    background-color: #353449;
+    background-color: var(--color-2);
 }
 #frame
 {
     margin: 40px;
-    border: 2px solid #F9F9F9;
+    border: 2px solid;
+    border-color: var(--color-1);
     width: auto;
     height: calc(100vh - 80px);
     position: relative;
-    background-color: #157A6E;
-}
+    background: var(--color-2);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+}   
 #presentation
 {
     margin: 20px;
     margin-left: 28px;
+    width: 37%;
+    text-align: justify;
 }
 #menu
 {
@@ -33,24 +54,90 @@ ul,a
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
     line-height: 45.40px;
-    color: #F9F9F9;
+    color: var(--color-1);
     text-decoration: none;
     list-style: square;
 }
 li
 {
+    font-family: 'Archivo', sans-serif;
     cursor: pointer;
+    font-weight: 500;
 }
-li:hover
+#menu li:hover
 {
-    font-size: 25px;
+    /*font-size: 25px;*/
+    opacity: 75%;
 }
 
 .active
 {
-    font-family: Archivo Black;
+    list-style:circle;
 }
 .nonActive
 {
+    list-style:outside;
+}
+#buttons
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#buttons li
+{
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 0px;
+    margin-bottom: 70px;
+    width: 40px;
+    transform: rotate(-90deg);
+    color: var(--color-1);
+    font-size: 20px;
     font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    color: var(--color-1);
+    text-decoration: none;
+    list-style-type: "";
+}
+#presentationText
+{
+    color:var(--color-1);
+    font-size: 35px;
+    font-family: 'Archivo Black';
+    font-weight: 400;
+    line-height: 45.40px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+@font-face {
+    font-family: ArchivoExpanded;
+    src: url(assets/fonts/Archivo_Expanded-ExtraBold.ttf);
+}
+#PROFESSIONAL
+{
+    font-family: ArchivoExpanded;
+    font-size: 43px;
+    color: #EE5951;
+}
+#about
+{
+    margin: 20px;
+    text-align: justify;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    float: right
+}
+#about p
+{
+    color: var(--color-1);
+    font-family: 'Archivo', sans-serif;
+    font-weight: 200;
 }
