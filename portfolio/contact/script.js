@@ -1,7 +1,7 @@
-var active = 0;
+var active = 1;
 var mode = 1;
-document.getElementById("0").className = "active";
-document.getElementById("1").className = "nonActive";
+document.getElementById("0").className = "nonActive";
+document.getElementById("1").className = "active";
 document.getElementById("2").className = "nonActive";
 
 function changeActive(clicked)
