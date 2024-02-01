@@ -35,14 +35,146 @@ body
     background: var(--color-2);
     backdrop-filter: blur(3.9px);
     -webkit-backdrop-filter: blur(3.9px);
-}   
+}
+   
 #presentation
 {
     margin: 20px;
     margin-left: 28px;
-    width: 37%;
     text-align: justify;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    #presentation
+    {
+        width: 240px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    #PROFESSIONAL
+    {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    #about p
+    {
+        font-size: 10px;
+        width: 90px;
+    }
+    ul, a
+    {
+        font-size: 12px;
+        line-height: 28px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+    #presentation
+    {
+        width: 280px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    #PROFESSIONAL
+    {
+        font-size: 27.7px;
+        line-height: 30px;
+    }
+    #about p
+    {
+        font-size: 12px;
+        width: 129px;
+    }
+    ul, a
+    {
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+{
+    #presentation
+    {
+        width: 310px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    #PROFESSIONAL
+    {
+        font-size: 30.6px;
+        line-height: 30px;
+    }
+    #about p
+    {
+        font-size: 13px;
+        width: 139px;
+    }
+    ul, a
+    {
+        font-size: 17px;
+        line-height: 36px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+    #presentation
+    {
+        width: 350px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    #PROFESSIONAL
+    {
+        font-size: 34.4px;
+        line-height: 35px;
+    }
+    #about p
+    {
+        font-size: 15px;
+        width: 160px;
+    }
+    ul, a
+    {
+        font-size: 19px;
+        line-height: 40px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+    #presentation
+    {
+        width: 420px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 45.40px;
+    }
+    #PROFESSIONAL
+    {
+        font-size: 41.1px;
+        line-height: 55px;
+    }
+    #about p
+    {
+        font-size: 16px;
+        width: 171px;
+    }
+    ul, a
+    {
+        font-size: 20px;
+        line-height: 45.40px;
+    }
+}
+
 #menu
 {
     position: absolute;
@@ -50,10 +182,8 @@ body
 }   
 ul, a
 {
-    font-size: 20px;
     font-family: 'Archivo', sans-serif;
     font-weight: 100;
-    line-height: 45.40px;
     color: var(--color-1);
     text-decoration: none;
     list-style: square;
@@ -111,10 +241,7 @@ li, a
 #presentationText
 {
     color:var(--color-1);
-    font-size: 35px;
     font-family: 'Archivo Black';
-    font-weight: 400;
-    line-height: 45.40px;
     word-wrap: break-word;
     text-align: justify;
 }
@@ -126,10 +253,20 @@ li, a
 #PROFESSIONAL
 {
     font-family: ArchivoExpanded;
-    font-size: 43px;
     color: #EE5951;
 }
-#about, #contact
+
+#about
+{
+    margin: 20px;
+    margin-right: 30px;
+    text-align: justify;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    float: right;
+}
+#contact
 {
     margin: 20px;
     margin-right: 30px;
@@ -145,8 +282,12 @@ li, a
     color: var(--color-1);
     font-family: 'Archivo', sans-serif;
     font-weight: 200;
-    font-size: 16px;
     font-weight: 400;
+    margin-bottom: 10px;
+}
+#links
+{
+    margin: 0px;
 }
 #links li
 {
